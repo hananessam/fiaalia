@@ -1,0 +1,147 @@
+// @import url(https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600&display=swap);
+// @import url(https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600&family=Tajawal:wght@200;300;400;700&display=swap);
+
+@font-face {
+  font-family: Bahij_bold;
+  src: url(../assets/fonts/Bahij_TheSansArabic-Bold.ttf);
+}
+
+@font-face {
+  font-family: Bahij_Semibold;
+  src: url(../assets/fonts/Bahij_TheSansArabic-SemiLight.ttf);
+}
+
+@import 'bootstrap/dist/css/bootstrap.rtl.css';
+
+:root{
+	--color-main: #C02D25;
+	--color-main-light: #E14D22;
+	--color-main-dark: #84181B;
+
+	--bg-main-gradient: linear-gradient(270deg, var(--color-main) 0%, var(--color-main-light) 100%);
+
+	--color-second: #3C8B12;
+	--color-third: #212121;
+
+	--nav-height: 100px;
+	--pre-nav-height: 70px;
+	--font-cairo: 'Cairo', serif;
+	--font-tajawal: 'Tajawal', serif;
+	--font-bahij-bold: 'Bahij_bold', serif;
+	--font-bahij-semibold: 'Bahij_Semibold', serif;
+}
+
+body{
+	font-family: var(--font-bahij-semibold);
+	overflow-x: hidden;
+}
+
+a, a:hover, .nav-link{
+	color: inherit;
+	text-decoration: none;
+}
+
+.rtl{
+	direction: rtl;
+}
+
+.ltr{
+	direction: ltr;
+}
+
+.bg-main-gradient{
+	background: rgb(192,45,37);
+	background: var(--bg-main-gradient);
+}
+
+.text-main-dark{
+	color: var(color-main-dark);
+}
+
+.bg-main-dark{
+	background-color: var(color-main-dark);
+}
+
+.btn-main-gradient{
+	background: var(--bg-main-gradient);
+	padding: .65rem 2.15rem;
+	border-radius: 140px;
+}
+
+
+.pre-nav{
+	height: var(--pre-nav-height);
+}
+
+.bg-center-contain{
+	background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav{
+}
+
+.search-area input {
+	border: none;
+  padding: 0.5rem 3rem 0.25rem 0.5rem;
+  border-radius: 41px;
+}
+
+.search-area input::-webkit-input-placeholder { /* Edge */
+  color: var(--color-main-dark);
+}
+
+.search-area input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--color-main-dark);
+}
+
+.search-area input::placeholder {
+  color: var(--color-main-dark);
+}
+
+.search-area input:focus-visible {
+  outline: 0;
+}
+
+.search-area .icon {
+  position: absolute;
+  top: 50%;
+  right: 1.25rem;
+  transform: translate(0, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+	.container-sm, .container {
+	    max-width: 720px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container-md, .container-sm, .container {
+	    max-width: 920px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container-lg, .container-md, .container-sm, .container {
+	    max-width: 1090px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container-xl, .container-lg, .container-md, .container-sm, .container {
+	    max-width: 1240px;
+	}
+}
