@@ -55,7 +55,11 @@ a, a:hover, .nav-link{
 }
 
 .text-main-dark{
-	color: var(color-main-dark);
+	color: var(--color-main-dark);
+}
+
+.text-main-light{
+	color: var(--color-main-light);
 }
 
 .bg-main-dark{
@@ -77,6 +81,10 @@ a, a:hover, .nav-link{
 	background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.xsmall {
+    font-size: 0.55rem;
 }
 
 nav{
@@ -111,8 +119,22 @@ nav{
   transform: translate(0, -50%);
 }
 
+.ad .ad-header{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 
-
+.ad .ad-header .icon{
+	width: 19px;
+  height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
 
 
 
