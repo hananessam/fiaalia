@@ -12,6 +12,8 @@
 }
 
 @import 'bootstrap/dist/css/bootstrap.rtl.css';
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
 
 :root{
 	--color-main: #C02D25;
@@ -163,6 +165,45 @@ nav{
 	bottom: 0;
 	left: 0;
 }
+
+.testimonial-image{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+}
+
+.testimonial-name{
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	background-color: #c02d2599;
+}
+
+[dir='rtl'] .slick-prev {
+  right: 40px;
+  z-index: 100;
+}
+
+[dir='rtl'] .slick-next {
+  left: 40px;
+  z-index: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
