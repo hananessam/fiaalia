@@ -74,6 +74,10 @@ a, a:hover, .nav-link{
 	border-radius: 140px;
 }
 
+.shadow-main {
+    box-shadow: 0 7px 10px rgba(174, 118, 44, 18%) !important;
+}
+
 .px-6{
 	padding-left: 4.15rem;
 	padding-right: 4.15rem;
@@ -138,13 +142,13 @@ nav{
   transform: translate(0, -50%);
 }
 
-.ad .ad-header{
+.ad-header{
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 11px;
+  right: 23px;
 }
 
-.ad .ad-header .icon{
+.ad-header .icon{
 	width: 19px;
   height: 19px;
   display: flex;
@@ -196,15 +200,26 @@ nav{
 	height: 250px
 }
 
+.news-email::-webkit-input-placeholder { /* Edge */
+  color: var(--color-main-light);
+  font-size: 1rem;
+}
 
+.news-email:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--color-main-light);
+  font-style: 1.25rem;
+}
 
+.news-email::placeholder {
+  color: var(--color-main-light);
+  font-style: 1.25rem;
+}
 
-
-
-
-
-
-
+.news-email-btn{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
 
 
 
