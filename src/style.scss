@@ -129,6 +129,31 @@ a, a:hover, .nav-link{
 	border-bottom-left-radius: 0.5rem;
 }
 
+.content p{
+	margin-bottom: 1.5rem
+}
+
+.content ul{
+	list-style: none;
+	font-size: 1.25rem !important;
+}
+
+.content ul li{
+	margin-bottom: 1.5rem;
+	position: relative;
+}
+
+.content ul li:before{
+	content: '';
+	display: block;
+	width: 13px;
+	height: 13px;
+	position: absolute;
+	top: 0.5rem;
+	right: -1.5rem;
+	background-image: var(--bg-main-gradient);
+	border-radius: 50%
+}
 nav{
 	position: absolute;
 	top: 0;
