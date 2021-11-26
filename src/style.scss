@@ -112,8 +112,16 @@ a, a:hover, .nav-link{
 	    border-color: var(--color-main-dark) !important;
 }
 
+.border-main-light{
+	    border-color: var(--color-main-light) !important;
+}
+
 .rounded-5 {
     border-radius: 0.5rem !important;
+}
+
+.rounded-125{
+	border-radius: 1.25rem !important;
 }
 
 .rounded-bottom-5 {
@@ -130,6 +138,10 @@ nav{
 }
 header{
 	height: 400px;
+}
+
+header.h-600{
+	height: 600px !important;
 }
 
 .search-area input {
@@ -220,7 +232,7 @@ header{
 }
 
 .trips{
-	overflow-x: hidden;
+	overflow-x: auto;
 }
 
 .trips::-webkit-scrollbar {
@@ -248,6 +260,12 @@ header{
 	left: 0;
 }
 
+.carousel-indicators [data-bs-target] {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-main);
+  border-radius: 50%;
+}
 
 
 
