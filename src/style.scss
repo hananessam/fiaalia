@@ -31,6 +31,8 @@
 	--font-tajawal: 'Tajawal', serif;
 	--font-bahij-bold: 'Bahij_bold', serif;
 	--font-bahij-semibold: 'Bahij_Semibold', serif;
+
+	--nav-height: 65px;
 }
 
 body{
@@ -83,6 +85,15 @@ a, a:hover, .nav-link{
 	padding-right: 4.15rem;
 }
 
+.pt-nh{
+	padding-top: var(--nav-height);
+}
+
+.mt-nh{
+	margin-top: var(--nav-height);
+}
+
+
 .pre-nav{
 	height: var(--pre-nav-height);
 }
@@ -111,6 +122,14 @@ a, a:hover, .nav-link{
 }
 
 nav{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: var(--nav-height);
+	transform: translateX(-50%);
+}
+header{
+	height: 400px;
 }
 
 .search-area input {
@@ -198,6 +217,14 @@ nav{
 
 .trip-image{
 	height: 250px
+}
+
+.trips{
+	overflow-x: hidden;
+}
+
+.trips::-webkit-scrollbar {
+  display: none;
 }
 
 .news-email::-webkit-input-placeholder { /* Edge */
