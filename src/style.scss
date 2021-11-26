@@ -129,8 +129,18 @@ a, a:hover, .nav-link{
 	border-bottom-left-radius: 0.5rem;
 }
 
+.top-25{
+	top: 25%;
+}
+
 .content p{
 	margin-bottom: 1.5rem
+}
+
+.content h6, .content h5, .content h4, .content h3, .content h2, .content h1{
+	color: var(--color-main-light);
+	margin-bottom: 1.5rem;
+	font-weight: bold;
 }
 
 .content ul{
