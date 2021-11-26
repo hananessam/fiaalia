@@ -20,6 +20,9 @@
 	--color-main-light: #E14D22;
 	--color-main-dark: #84181B;
 
+	--color-main-light-50: #e14d2238;
+
+
 	--bg-main-gradient: linear-gradient(270deg, var(--color-main) 0%, var(--color-main-light) 100%);
 
 	--color-second: #3C8B12;
@@ -66,8 +69,16 @@ a, a:hover, .nav-link{
 	color: var(--color-main-light);
 }
 
+.text-main{
+	color: var(--color-main);
+}
+
 .bg-main-dark{
 	background-color: var(color-main-dark);
+}
+
+.bg-grey-50{
+	background-color: #F5F5F5;
 }
 
 .btn-main-gradient{
@@ -114,6 +125,10 @@ a, a:hover, .nav-link{
 
 .border-main-light{
 	    border-color: var(--color-main-light) !important;
+}
+
+.border-main-light-50{
+	    border-color: var(--color-main-light-50) !important;
 }
 
 .rounded-5 {
@@ -302,7 +317,31 @@ header.h-600{
   border-radius: 50%;
 }
 
+.custom-radio-input{
+	position: relative;
+}
 
+.custom-radio-input input{
+	display: none;
+}
+
+.custom-radio-input label:before{
+	content: '';
+	display: block;
+	width: 15px;
+	height: 15px;
+	background-color: #fff;
+	border: 1px solid var(--color-main);
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+.custom-radio-input > input:checked + label:before{
+	background-color: var(--color-main) !important;
+}
 
 
 
