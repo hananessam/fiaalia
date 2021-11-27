@@ -488,8 +488,26 @@ footer input::placeholder{
   border-color: var(--color-main-light);
 }
 
+.tip{
+	position: absolute;
+	display: inline-block;
+	width: unset !important;
+	background-color: #ffffffde;
+	padding: .5rem 1.5rem;
+}
 
-
+.tip:after{
+	content: "";
+  display: block;
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-top: 16px solid #ffffffde;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 0px solid #ffffffde;
+}
 
 @media (min-width: 576px) {
 	.container-sm, .container {

@@ -4,6 +4,8 @@ import $ from "jquery";
 window.$ = window.jQuery = $;
 import Slick from "slick-carousel";
 
+import './fair.js';
+
 
 import './style.scss';
 

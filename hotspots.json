@@ -1,0 +1,11 @@
+{
+	"0":{ "x": 100, "y": 50, "width": 100, "height": 150, "color":"#E12A22", "is_booked": false, "tip": "الطول 5م , العرض 4م" },
+	"1":{ "x": 220, "y": 50, "width": 150, "height": 100, "color":"#FDF3DA", "is_booked": false, "tip": "الطول3 , العرض2" },
+	"2":{ "x": 500, "y": 50, "width": 200, "height": 20, "color":"#C5B8B4", "is_booked": false, "tip": "الطول6 , العرض2" },
+	"3":{ "x": 450, "y": 150, "width": 40, "height": 40, "color":"#48A8DE", "is_booked": false, "tip": "الطول1 , العرض1" },
+	"4":{ "x": 500, "y": 150, "width": 40, "height": 40, "color":"#48A8DE", "is_booked": false, "tip": "الطول1 , العرض1" },
+	"5":{ "x": 300, "y": 200, "width": 200, "height": 200, "color":"#E86E9D", "is_booked": false, "tip": "الطول 5م , العرض 4م" },
+	"6":{ "x": 300, "y": 200, "width": 200, "height": 200, "color":"#48A8DE", "is_booked": false, "tip": "الطول 5م , العرض 4م" },
+	"7":{ "x": 300, "y": 200, "width": 200, "height": 200, "color":"#E86E9D", "is_booked": false, "tip": "الطول 5م , العرض 4م" },
+	"8":{ "x": 100, "y": 250, "width": 100, "height": 100, "color":"#B6B6B6", "is_booked": true, "tip": "Booked" }
+}
