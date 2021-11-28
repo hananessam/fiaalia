@@ -72,8 +72,8 @@ $(document).ready(function () {
 
 	    if (mouseX > h.x && mouseX < h.x + h.width && mouseY > h.y && mouseY < h.y + h.height) {
 	      $('.tip').text(h.tip).css({
-	      	top: mouseY+'px',
-	      	left: mouseX+'px'
+	      	top: h.y+(h.height/2)+'px',
+	      	left: h.x+h.width/2+'px'
 	      })
 	    }
 	  }
