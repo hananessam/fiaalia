@@ -67,13 +67,24 @@ $(document).ready(function () {
 	    var dx = mouseX + h.x;
 	    var dy = mouseY + h.y;
 
+
+	    const canvasRelativeX = mouseX * canvas.width / BB.width;
+	  	const canvasRelativeY = mouseY * canvas.height / BB.height;
+
 	    // var centerX = h.x + h.w/2;
 	    // var centerY = h.y + h.h/2;
 
-	    if (mouseX > h.x && mouseX < h.x + h.width && mouseY > h.y && mouseY < h.y + h.height) {
+	    let percentX = mouseX/window.innerWidth;
+	    let percentY = mouseY/window.innerHeight;
+
+	    if (canvasRelativeX > h.x && canvasRelativeX < h.x + h.width && canvasRelativeY > h.y && canvasRelativeY < h.y + h.height) {
+	      let left = (h.x/canvas.width)*100;
+	      let top = (h.y/canvas.height)*100;
+
+	      console.log(h.x/canvas.width*100*window.width)
 	      $('.tip').text(h.tip).css({
-	      	top: h.y+(h.height/2)+'px',
-	      	left: h.x+h.width/2+'px'
+	      	left: left+'%',
+	      	top: top+'%',
 	      })
 	    }
 	  }
