@@ -55,6 +55,6 @@ $(document).ready(function () {
     $(e.target).select();
   }
 
-  $('body').on('keyup', 'input', goToNextInput);
-  $('body').on('click', 'input', onFocus);
+  $('body').on('keyup', '.verification input', goToNextInput);
+  $('body').on('click', '.verification input', onFocus);
 })
