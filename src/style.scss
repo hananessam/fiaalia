@@ -518,6 +518,28 @@ footer input::placeholder{
   opacity: .7;
 }
 
+#my-reservarions .nav-pills li a{
+	opacity: .7;
+	position: relative;
+	display: block;
+}
+
+#my-reservarions .nav-pills li a.active{
+	opacity: 1;
+}
+
+#my-reservarions .nav-pills li a.active:after{
+	content: '';
+	width: 95%;
+	height: 3px;
+	background-color: var(--color-main-light);
+	border-radius: 3px;
+	position: absolute;
+	bottom: -12px;
+	left: 0;
+	transform: translateX(2.5%);
+}
+
 @media (min-width: 576px) {
 	.container-sm, .container {
 	    max-width: 720px;
