@@ -509,6 +509,15 @@ footer input::placeholder{
   border-bottom: 0px solid #ffffffde;
 }
 
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-main-dark);
+  border-radius: 50%;
+  margin: 0 0.25rem;
+  opacity: .7;
+}
+
 @media (min-width: 576px) {
 	.container-sm, .container {
 	    max-width: 720px;

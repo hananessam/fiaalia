@@ -63,18 +63,21 @@
 
 	<!-- header -->
 	<header class="container-fluid position-relative px-0">
-		<nav class="container mb-5 pt-3">
+		<nav class="container mb-5 pt-3" style="z-index: 1">
 			<div class="row">
 				<div class="col-lg-7 col-md-7 col-12 d-flex justify-content-start align-items-center">
-					<ul class="list-unstyled w-100 h-100 d-flex justify-content-between align-items-center text-white mb-0">
-						<li class="me-3 text-nowrap btn-main-gradient">
+					<ul class="list-unstyled w-100 h-100 d-flex justify-content-between align-items-center text-main-dark mb-0">
+						<li class="me-3 text-nowrap btn-main-gradient text-white">
 							<a href="#">الرئيسية</a>
 						</li>
 						<li class="me-3 text-nowrap">
-							<a href="#">ماذا يحدث هنا</a>
+							<a href="#">الجاليري</a>
 						</li>
 						<li class="me-3 text-nowrap">
-							<a href="#">الأماكن</a>
+							<a href="#">الاماكن</a>
+						</li>
+						<li class="me-3 text-nowrap">
+							<a href="#">الصفحة الشخصية</a>
 						</li>
 						<li class="me-3 text-nowrap">
 							<a href="#">تواصل معنا</a>
@@ -88,8 +91,88 @@
 		</nav>
 
 		<div class="h-100">
-			<div class="bg-center-cover py-5 h-100" style="background-image: url('assets/images/hero-01.jpg')">
-				<div class="container text-white mt-nh">
+
+			<div id="carouselHero" class="carousel slide h-100" data-ride="carousel">
+			  <ol class="carousel-indicators">
+			    <li data-bs-target="#carouselHero" data-bs-slide-to="0" class="active"></li>
+			    <li data-bs-target="#carouselHero" data-bs-slide-to="1"></li>
+			    <li data-bs-target="#carouselHero" data-bs-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner h-100">
+			    <div class="carousel-item bg-center-cover py-5 h-100 active" style="background-image: url('assets/images/hero-02.png')">
+						<div class="container mt-nh">
+							<div class="col-lg-7 col-md-12 col-12">
+								<h2 class="fw-bold">ماهية الفعالية</h2>
+
+								<p class="lh-lg">
+									من خبرة شركة اإلباء والرقي للترفيه ألكثر من 14 عام في مجال المعارض والفعـاليات الترفيـهيـة وتـطلعـها المسـتمر لتـطويـر هذه الصـناعـة وايـمانا منـها بأن الفعاليـات الترفيـهية أساس لنشر ثقافة السـياحة الداخلية بإيجاد المواقع والمساحات المـناسبة والمميزة إلقامة هذا النوع من الفعاليات
+								</p>
+
+								<a href="#" class="fs-6 btn-main-gradient d-inline-block mb-5 text-white">تفاصيل الفعالية ... 
+									<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 19.432 20">
+										  <g id="arrow-bar-up" transform="translate(-2.497 30.123) rotate(-90)">
+										    <path id="Path_240" data-name="Path 240" d="M29.7,15.509a1.428,1.428,0,0,0,0-2.022l-8.57-8.57a1.428,1.428,0,0,0-2.022,0l-8.57,8.57a1.43,1.43,0,1,0,2.022,2.022l7.559-7.56,7.559,7.562a1.428,1.428,0,0,0,2.022,0Z" transform="translate(0 -2)" fill="#fff" fill-rule="evenodd"/>
+										    <path id="Path_241" data-name="Path 241" d="M29.7,15.509a1.428,1.428,0,0,0,0-2.022l-8.57-8.57a1.428,1.428,0,0,0-2.022,0l-8.57,8.57a1.43,1.43,0,1,0,2.022,2.022l7.559-7.56,7.559,7.562a1.428,1.428,0,0,0,2.022,0Z" transform="translate(0 6)" fill="#fff" fill-rule="evenodd"/>
+										  </g>
+										</svg>
+
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item bg-center-cover py-5 h-100" style="background-image: url('assets/images/hero-02.png')">
+						<div class="container mt-nh">
+							<div class="col-lg-7 col-md-12 col-12">
+								<h2 class="fw-bold">ماهية الفعالية</h2>
+
+								<p class="lh-lg">
+									من خبرة شركة اإلباء والرقي للترفيه ألكثر من 14 عام في مجال المعارض والفعـاليات الترفيـهيـة وتـطلعـها المسـتمر لتـطويـر هذه الصـناعـة وايـمانا منـها بأن الفعاليـات الترفيـهية أساس لنشر ثقافة السـياحة الداخلية بإيجاد المواقع والمساحات المـناسبة والمميزة إلقامة هذا النوع من الفعاليات
+								</p>
+
+								<a href="#" class="fs-6 btn-main-gradient d-inline-block mb-5 text-white">تفاصيل الفعالية ... 
+									<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 19.432 20">
+										  <g id="arrow-bar-up" transform="translate(-2.497 30.123) rotate(-90)">
+										    <path id="Path_240" data-name="Path 240" d="M29.7,15.509a1.428,1.428,0,0,0,0-2.022l-8.57-8.57a1.428,1.428,0,0,0-2.022,0l-8.57,8.57a1.43,1.43,0,1,0,2.022,2.022l7.559-7.56,7.559,7.562a1.428,1.428,0,0,0,2.022,0Z" transform="translate(0 -2)" fill="#fff" fill-rule="evenodd"/>
+										    <path id="Path_241" data-name="Path 241" d="M29.7,15.509a1.428,1.428,0,0,0,0-2.022l-8.57-8.57a1.428,1.428,0,0,0-2.022,0l-8.57,8.57a1.43,1.43,0,1,0,2.022,2.022l7.559-7.56,7.559,7.562a1.428,1.428,0,0,0,2.022,0Z" transform="translate(0 6)" fill="#fff" fill-rule="evenodd"/>
+										  </g>
+										</svg>
+
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item bg-center-cover py-5 h-100" style="background-image: url('assets/images/hero-02.png')">
+						<div class="container mt-nh">
+							<div class="col-lg-7 col-md-12 col-12">
+								<h2 class="fw-bold">ماهية الفعالية</h2>
+
+								<p class="lh-lg">
+									من خبرة شركة اإلباء والرقي للترفيه ألكثر من 14 عام في مجال المعارض والفعـاليات الترفيـهيـة وتـطلعـها المسـتمر لتـطويـر هذه الصـناعـة وايـمانا منـها بأن الفعاليـات الترفيـهية أساس لنشر ثقافة السـياحة الداخلية بإيجاد المواقع والمساحات المـناسبة والمميزة إلقامة هذا النوع من الفعاليات
+								</p>
+
+								<a href="#" class="fs-6 btn-main-gradient d-inline-block mb-5 text-white">تفاصيل الفعالية ... 
+									<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 19.432 20">
+										  <g id="arrow-bar-up" transform="translate(-2.497 30.123) rotate(-90)">
+										    <path id="Path_240" data-name="Path 240" d="M29.7,15.509a1.428,1.428,0,0,0,0-2.022l-8.57-8.57a1.428,1.428,0,0,0-2.022,0l-8.57,8.57a1.43,1.43,0,1,0,2.022,2.022l7.559-7.56,7.559,7.562a1.428,1.428,0,0,0,2.022,0Z" transform="translate(0 -2)" fill="#fff" fill-rule="evenodd"/>
+										    <path id="Path_241" data-name="Path 241" d="M29.7,15.509a1.428,1.428,0,0,0,0-2.022l-8.57-8.57a1.428,1.428,0,0,0-2.022,0l-8.57,8.57a1.43,1.43,0,1,0,2.022,2.022l7.559-7.56,7.559,7.562a1.428,1.428,0,0,0,2.022,0Z" transform="translate(0 6)" fill="#fff" fill-rule="evenodd"/>
+										  </g>
+										</svg>
+
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+			  </div>
+			</div>
+
+			<!-- <div class="bg-center-cover py-5 h-100" style="background-image: url('assets/images/hero-02.png')">
+				<div class="container mt-nh">
 					<div class="col-lg-7 col-md-12 col-12">
 						<h2 class="fw-bold">ماهية الفعالية</h2>
 
@@ -97,7 +180,7 @@
 							من خبرة شركة اإلباء والرقي للترفيه ألكثر من 14 عام في مجال المعارض والفعـاليات الترفيـهيـة وتـطلعـها المسـتمر لتـطويـر هذه الصـناعـة وايـمانا منـها بأن الفعاليـات الترفيـهية أساس لنشر ثقافة السـياحة الداخلية بإيجاد المواقع والمساحات المـناسبة والمميزة إلقامة هذا النوع من الفعاليات
 						</p>
 
-						<a href="#" class="fs-6 btn-main-gradient d-inline-block mb-5">تفاصيل الفعالية ... 
+						<a href="#" class="fs-6 btn-main-gradient d-inline-block mb-5 text-white">تفاصيل الفعالية ... 
 							<span>
 								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 19.432 20">
 								  <g id="arrow-bar-up" transform="translate(-2.497 30.123) rotate(-90)">
@@ -110,7 +193,7 @@
 						</a>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</header>
 
@@ -727,7 +810,7 @@
 	</div>
 
 	<!-- trips -->
-	<section class="container-fluid">
+	<!-- <section class="container-fluid">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-12 d-flex justify-content-md-start justify-content-center align-items-center">
@@ -2035,7 +2118,7 @@
 			</div>
 
 		</div>
-	</section>
+	</section> -->
 
 	<div class="container-fluid my-4">
 		<div class="container">
